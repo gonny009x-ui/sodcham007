@@ -1,139 +1,67 @@
 <!DOCTYPE html>
 <html lang="th" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>น้ำอ้อยคั้นสดแท้ 100% จากไร่สู่ขวด | สดฉ่ำ (SODCHAM)</title>
-  <meta name="description" content="สั่งน้ำอ้อยคั้นสดแท้ 100% จากไร่ครอบครัว จ.เลย 'สดฉ่ำ' ไม่แต่งสี ไม่แต่งกลิ่น หวานพอดี คั้นสดใหม่ทุกวัน ส่งตรงถึงบ้านคุณ">
+  <meta name="description" content="สั่งน้ำอ้อยคั้นสดแท้ 100% จากไร่ครอบครัว จ.เลย 'สดฉ่ำ' ไม่แต่งสี ไม่แต่งกลิ่น หวานพอดี คั้นสดใหม่ทุกวัน ผ่านการพาสเจอร์ไรซ์แบบอ่อน เก็บเย็นอยู่ได้นานขึ้น ส่งถึงบ้านคุณ">
   <meta name="keywords" content="น้ำอ้อย, น้ำอ้อยคั้นสด, น้ำอ้อย 100%, สดฉ่ำ, sodcham, เครื่องดื่มเพื่อสุขภาพ">
+
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font: Kanit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: 'Kanit', sans-serif; }
-    .bg-sugarcane-green { background-color: #4CAF50; }
-    .text-sugarcane-green { color: #4CAF50; }
-    .border-sugarcane-green { border-color: #4CAF50; }
-    .bg-cream { background-color: #F9F7F3; }
-    .bg-dark-green { background-color: #2E7D32; }
-    .text-dark-green { color: #2E7D32; }
-    .hero-bg{background-image: linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.85)), url('sodcham_ice.webp');background-size: cover;background-position: center;}
+    :root{
+      --green:#4CAF50; --dark:#2E7D32; --cream:#F9F7F3;
+    }
+    body{font-family:'Kanit',sans-serif}
+    .bg-sugarcane-green{background-color:var(--green)}
+    .text-sugarcane-green{color:var(--green)}
+    .bg-dark-green{background-color:var(--dark)}
+    .text-dark-green{color:var(--dark)}
+    .bg-cream{background-color:var(--cream)}
+    .hero-bg{
+      background-image: linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.85)), url('sodcham_ice.webp');
+      background-size: cover; background-position:center;
+    }
   </style>
 </head>
 <body class="bg-cream text-gray-800">
-<header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
-  <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-    <div class="h-12"><img src="sodcham_logo.webp" alt="โลโก้สดฉ่ำ" class="h-full w-auto"></div>
-    <nav class="hidden md:flex space-x-8 items-center">
-      <a href="#products" class="hover:text-sugarcane-green">เมนู</a>
-      <a href="#process" class="hover:text-sugarcane-green">ขั้นตอนความสด</a>
-      <a href="#story" class="hover:text-sugarcane-green">เรื่องเล่าของเรา</a>
-      <a href="#contact" class="hover:text-sugarcane-green">วิธีสั่งซื้อ</a>
-    </nav>
-    <a href="#products" class="bg-sugarcane-green text-white font-semibold px-6 py-2 rounded-full hover:bg-dark-green transition-colors">สั่งเลย</a>
-  </div>
-</header>
-<main>
-  <section class="hero-bg">
-    <div class="container mx-auto px-6 py-16 md:py-24 text-center flex flex-col items-center">
-      <div class="relative w-full max-w-sm md:max-w-md mx-auto mb-8">
-        <img src="sodcham_bottle_hand.webp" alt="ขวดน้ำอ้อยคั้นสดเย็นฉ่ำ" class="shadow-2xl w-full h-auto">
-        <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-white p-2 rounded-full shadow-lg flex items-center justify-center">
-          <img src="sodcham_logo.webp" alt="มาสคอตต้นอ้อยน้อย" class="w-full h-auto object-contain">
-        </div>
+
+  <!-- Header -->
+  <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <div class="h-12">
+        <img src="sodcham_logo.webp" alt="โลโก้สดฉ่ำ SODCHAM" class="h-full w-auto">
       </div>
-      <h1 class="text-4xl md:text-6xl font-bold text-dark-green leading-tight mb-4">จากไร่สู่ขวด สดแท้ทุกหยด</h1>
-      <p class="text-lg md:text-xl text-gray-600 mb-8">ไม่สด ไม่บดให้ — หวานพอดี จากใจไร่เลย</p>
-      <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-        <a href="#products" class="bg-sugarcane-green text-white font-bold px-10 py-4 rounded-full text-lg hover:bg-dark-green transition-colors shadow-lg">สั่งเลย</a>
-        <a href="#process" class="bg-white text-dark-green font-bold px-10 py-4 rounded-full text-lg border-2 border-dark-green hover:bg-green-50 transition-colors shadow-lg">ดูขั้นตอนความสด</a>
-      </div>
-      <div class="mt-12 bg-white/70 backdrop-blur-sm p-4 rounded-xl inline-block shadow">
-        <p class="text-dark-green font-semibold">100% น้ำอ้อยคั้นสด • ไม่แต่งกลิ่น ไม่แต่งรส • คั้นวันต่อวัน</p>
-      </div>
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#products" class="hover:text-sugarcane-green">เมนู</a>
+        <a href="#process" class="hover:text-sugarcane-green">ขั้นตอนความสด</a>
+        <a href="#story" class="hover:text-sugarcane-green">เรื่องเล่าของเรา</a>
+        <a href="#contact" class="hover:text-sugarcane-green">วิธีสั่งซื้อ</a>
+      </nav>
+      <a href="#products" class="bg-sugarcane-green text-white font-semibold px-6 py-2 rounded-full hover:bg-dark-green transition-colors">สั่งเลย</a>
     </div>
-  </section>
-  <section id="products" class="py-16 md:py-24">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-2 text-dark-green">เมนูความสดชื่น</h2>
-      <p class="text-gray-600 mb-12">เลือกขนาดที่ใช่ ในสไตล์ของคุณ</p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform flex flex-col">
-          <div class="p-4 flex-grow flex items-center justify-center">
-            <img src="sodcham_bottle_hand.webp" alt="น้ำอ้อยขนาด 250ml" class="max-h-64 object-contain">
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero-bg">
+      <div class="container mx-auto px-6 py-16 md:py-24 text-center flex flex-col items-center">
+        <div class="relative w-full max-w-sm md:max-w-md mx-auto mb-8">
+          <!-- ภาพโปรดักต์: ขวดเดี่ยวพื้นโปร่ง -->
+          <img src="sodcham_bottle_hero.webp" alt="ขวดน้ำอ้อยคั้นสด SODCHAM" class="shadow-2xl w-full h-auto">
+          <div class="absolute -bottom-8 -right-8 w-28 h-28 md:w-32 md:h-32 bg-white p-2 rounded-full shadow-lg grid place-items-center">
+            <img src="sodcham_logo.webp" alt="ต้นอ้อยน้อย มาสคอตสดฉ่ำ" class="w-full h-auto object-contain">
           </div>
-          <div class="p-6 border-t"><h3 class="text-xl font-semibold mb-2">ขนาดพกพา (250 ml)</h3><p class="text-2xl font-bold text-sugarcane-green mb-4">40.-</p><button class="w-full bg-sugarcane-green text-white font-semibold py-3 rounded-lg hover:bg-dark-green transition-colors">หยิบใส่ตะกร้า</button></div>
         </div>
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform flex flex-col">
-          <div class="p-4 flex-grow flex items-center justify-center">
-            <img src="sodcham_bottle_hand.webp" alt="น้ำอ้อยขนาด 500ml" class="max-h-64 object-contain transform scale-110">
-          </div>
-          <div class="p-6 border-t"><h3 class="text-xl font-semibold mb-2">ขนาดจุใจ (500 ml)</h3><p class="text-2xl font-bold text-sugarcane-green mb-4">75.-</p><button class="w-full bg-sugarcane-green text-white font-semibold py-3 rounded-lg hover:bg-dark-green transition-colors">หยิบใส่ตะกร้า</button></div>
-        </div>
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform flex flex-col">
-          <div class="p-4 flex-grow flex items-center justify-center">
-            <img src="sodcham_tray.webp" alt="เซ็ตน้ำอ้อย 6 ขวด" class="w-full h-64 object-cover">
-          </div>
-          <div class="p-6 border-t"><h3 class="text-xl font-semibold mb-2">เซ็ตสดชื่น (6 x 250 ml)</h3><p class="text-2xl font-bold text-sugarcane-green mb-4">220.- <span class="text-base text-gray-500 line-through">240.-</span></p><button class="w-full bg-sugarcane-green text-white font-semibold py-3 rounded-lg hover:bg-dark-green transition-colors">หยิบใส่ตะกร้า</button></div>
-        </div>
-      </div>
-      <button class="mt-8 text-dark-green font-semibold border-2 border-dark-green px-6 py-2 rounded-full hover:bg-green-50 transition-colors">พรีออเดอร์รอบคั้นถัดไป</button>
-      <p class="mt-8 text-gray-500">🧊 เก็บแช่เย็น • 👋 เขย่าก่อนดื่ม</p>
-    </div>
-  </section>
-  <section id="process" class="py-16 md:py-24 bg-white">
-    <div class="container mx-auto px-6">
-      <div class="text-center">
-        <h2 class="text-3xl font-bold mb-4 text-dark-green">เราคั้นเพื่อความสด ไม่ใช่เพื่อสต็อก</h2>
-        <p class="text-gray-600 mb-12 max-w-2xl mx-auto">นี่คือ 4 ขั้นตอนง่ายๆ ที่ทำให้ทุกขวดเต็มไปด้วยคุณภาพและความสดใหม่จากไร่ของเรา</p>
-      </div>
-      <div class="mt-16">
-        <img src="sodcham_ice.webp" alt="ทีมงานสดฉ่ำกำลังเตรียมน้ำอ้อย" class="rounded-xl shadow-lg mx-auto w-full max-w-4xl h-auto object-cover">
-      </div>
-    </div>
-  </section>
-  <section id="story" class="py-16 md:py-24">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col md:flex-row items-center gap-12">
-        <div class="md:w-1/2"><img src="sodcham_logo.webp" alt="เรื่องราวของแบรนด์สดฉ่ำ" class="rounded-xl w-full max-w-md mx-auto"></div>
-        <div class="md:w-1/2 text-center md:text-left">
-          <p class="text-sugarcane-green font-semibold mb-2">SODCHAM</p>
-          <h2 class="text-3xl font-bold mb-4 text-dark-green">เรื่องเล่าจากหยดน้ำอ้อย</h2>
-          <p class="text-gray-600 leading-relaxed mb-6">"สดฉ่ำ" เกิดจากคำถามง่ายๆ ...</p>
-          <a href="#" class="text-dark-green font-semibold border-b-2 border-dark-green hover:text-sugarcane-green hover:border-sugarcane-green transition">รู้จักเรามากขึ้น</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-<footer class="bg-dark-green text-white">
-  <div class="container mx-auto px-6 py-12">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-      <div><div class="h-16 mb-4"><img src="sodcham_logo.webp" alt="โลโก้สดฉ่ำ" class="h-full w-auto"></div><p class="text-gray-300">น้ำอ้อยคั้นสดแท้ 100%<br>จากไร่สู่ขวด สดแท้ทุกหยด</p></div>
-    </div>
-    <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
-      <p>&copy; 2024 SODCHAM. All Rights Reserved.</p>
-    </div>
-  </div>
-</footer>
-<div class="md:hidden fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-sm p-4 border-t border-gray-200 z-40">
-  <a href="#products" class="w-full bg-sugarcane-green text-white font-bold py-3 rounded-full text-lg hover:bg-dark-green transition-colors shadow-lg flex items-center justify-center">สั่งเลย</a>
-</div>
-<script>
-  function startCountdown(){
-    const el = document.getElementById('countdown'); if(!el) return;
-    const now = new Date(); let noon = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12,0,0);
-    if(now>noon) noon.setDate(noon.getDate()+1);
-    const pad = n=>String(n).padStart(2,'0');
-    const t = setInterval(()=>{
-      const d = noon - Date.now();
-      if(d<=0){ clearInterval(t); el.textContent = "หมดเวลาแล้ว!"; setTimeout(startCountdown, 2000); return; }
-      const h=Math.floor((d%(86400000))/3600000), m=Math.floor((d%3600000)/60000), s=Math.floor((d%60000)/1000);
-      el.textContent = `${pad(h)} : ${pad(m)} : ${pad(s)}`;
-    },1000);
-  }
-  document.addEventListener('DOMContentLoaded', startCountdown);
-</script>
-</body>
-</html>
+        <h1 class="text-4xl md:text-6xl font-bold text-dark-green leading-tight mb-4">จากไร่สู่ขวด สดแท้ทุกหยด</h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-8">ไม่สด ไม่บดให้ — หวานพอดี จากใจไร่เลย</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#products" class="bg-sugarcane-green text-white font-bold px-10
